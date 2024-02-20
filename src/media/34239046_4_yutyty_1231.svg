@@ -1,0 +1,55 @@
+<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+	<style>
+	  .path-0 {
+		animation: pathAnim-0 4s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+  
+	  @keyframes pathAnim-0 {
+		0% {
+		  d: path("M 0,400 L 0,100 C 284,107.5 568,115 808,115 C 1048,115 1244,107.5 1440,100 L 1440,400 L 0,400 Z");
+		}
+		25% {
+		  d: path("M 0,400 L 0,100 C 192.5,95.5 385,91 625,91 C 865,91 1152.5,95.5 1440,100 L 1440,400 L 0,400 Z");
+		}
+		50% {
+		  d: path("M 0,400 L 0,100 C 178,104.5 356,109 596,109 C 836,109 1138,104.5 1440,100 L 1440,400 L 0,400 Z");
+		}
+		75% {
+		  d: path("M 0,400 L 0,100 C 176.5,105.5 353,111 593,111 C 833,111 1136.5,105.5 1440,100 L 1440,400 L 0,400 Z");
+		}
+		100% {
+		  d: path("M 0,400 L 0,100 C 284,107.5 568,115 808,115 C 1048,115 1244,107.5 1440,100 L 1440,400 L 0,400 Z");
+		}
+	  }
+	</style>
+	<path d="M 0,400 L 0,100 C 284,107.5 568,115 808,115 C 1048,115 1244,107.5 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="0.1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+	<style>
+	  .path-1 {
+		animation: pathAnim-1 4s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	  }
+  
+	  @keyframes pathAnim-1 {
+		0% {
+		  d: path("M 0,400 L 0,233 C 226,230 452,227 692,227 C 932,227 1186,230 1440,233 L 1440,400 L 0,400 Z");
+		}
+		25% {
+		  d: path("M 0,400 L 0,233 C 220,226.5 440,220 680,220 C 920,220 1180,226.5 1440,233 L 1440,400 L 0,400 Z");
+		}
+		50% {
+		  d: path("M 0,400 L 0,233 C 305,211 610,189 850,189 C 1090,189 1265,211 1440,233 L 1440,400 L 0,400 Z");
+		}
+		75% {
+		  d: path("M 0,400 L 0,233 C 192.5,217.5 385,202 625,202 C 865,202 1152.5,217.5 1440,233 L 1440,400 L 0,400 Z");
+		}
+		100% {
+		  d: path("M 0,400 L 0,233 C 226,230 452,227 692,227 C 932,227 1186,230 1440,233 L 1440,400 L 0,400 Z");
+		}
+	  }
+	</style>
+	<path d="M 0,400 L 0,233 C 226,230 452,227 692,227 C 932,227 1186,230 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="0.1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+  </svg>
+  

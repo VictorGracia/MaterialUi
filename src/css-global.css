@@ -1,0 +1,7 @@
+/* .svg-background
+{
+    background-image: url(``);
+} */
+.MuiChartsAxis-root{
+    display: none;
+}
