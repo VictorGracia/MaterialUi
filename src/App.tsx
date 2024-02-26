@@ -7,10 +7,11 @@ import { LineChart } from '@mui/x-charts';
 import './css-global.css';
 import svg from './media/34239046_4_yutyty_1231.svg';
 import Dashboard from './pages/dashboard';
-import Recepcion from './pages/recepcion';
+import TableView from './pages/table';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Form from './pages/form';
 import Login from './pages/login';
+import CardView from './pages/cards';
 
 function App() {
   const FlexContainer = styled(Box)({
@@ -20,7 +21,7 @@ function App() {
   });
 
   const LeftDrawer = styled(Paper)({
-    width: '250px', // Ancho fijo del Drawer
+    width: '300px', // Ancho fijo del Drawer
     minHeight: '100%', // Ajusta la altura al 100% del viewport
     position: 'fixed', // Fija el Drawer a la izquierda
     top: 0,
@@ -30,7 +31,7 @@ function App() {
 
   const ContentContainer = styled(Box)({
     flex: 1, // Hace que este contenedor ocupe todo el espacio restante
-    marginLeft: '250px', // Mueve el contenido a la derecha del Drawer
+    marginLeft: '300px', // Mueve el contenido a la derecha del Drawer
     padding: '20px', // Añade un poco de espacio alrededor del contenido
   });
   const Item = styled(Paper)(({ theme }) => ({
@@ -55,11 +56,12 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="" element={<Dashboard />} index />
-          <Route path="/dashboard" element={<Dashboard />} index />
-          <Route path="/recepcion" element={<Recepcion />} index />
+          <Route path="" element={<Login />} index />
           <Route path="/login" element={<Login />} index />
+          <Route path="/dashboard" element={<Dashboard />} index />
           <Route path="/form" element={<Form />} index />
+          <Route path="/table" element={<TableView />} index />
+          <Route path="/cards" element={<CardView />} index />
         </Routes>
       </Router>
     </>

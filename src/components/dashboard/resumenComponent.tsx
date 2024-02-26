@@ -30,8 +30,7 @@ export default function ComponentResumen({evento}:any) {
                     height: 90,
                     borderRadius: '25px',
                     padding: 3
-                }}
-            >
+                }}>
                 <Typography variant='h6' sx={{ color: 'white' }}>{evento}</Typography>
             </Box>
             <Box

@@ -5,3 +5,19 @@
 .MuiChartsAxis-root{
     display: none;
 }
+ .css-11sd7xi-MuiPaper-root
+ {
+    box-shadow:  0px 8px #848484;
+ }
+/* .MuiContainer-root 
+{
+    background-color: blue;
+}  */
+.MuiBox-root .css-binzgt 
+{
+    margin: 0;
+}
+.css-cfx9hm-MuiContainer-root
+{
+    padding: 2rem !important;
+}

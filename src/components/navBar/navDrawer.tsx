@@ -2,13 +2,14 @@ import { Box, Collapse, Divider, List, ListItem, ListItemButton, ListItemIcon, L
 import InboxIcon from "@mui/icons-material/Inbox";
 import { inherits } from "util";
 import { useState } from "react";
-import { ExpandLess } from "@mui/icons-material";
+import { ExpandLess, GraphicEq, GraphicEqSharp, Person, Timelapse, Timeline } from "@mui/icons-material";
 import DraftsIcon from '@mui/icons-material/Drafts';
 import SendIcon from '@mui/icons-material/Send';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
-
-
+import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
+import TableViewOutlinedIcon from '@mui/icons-material/TableViewOutlined';
+import AddCardIcon from '@mui/icons-material/AddCard';
 export default function Drawer() {
     const theme = useTheme();
     const Img = styled("img")({
@@ -16,6 +17,7 @@ export default function Drawer() {
         height: "100%",
         objectFit: "cover",
         objectPosition: "center"
+
     });
     const [open, setOpen] = useState(false);
 
@@ -27,8 +29,6 @@ export default function Drawer() {
 
     return (
         <Box sx={{
-            // width: 350,
-            // bgcolor: color,
             position: 'fixed',
             top: 0,
             bottom: 0,
@@ -37,22 +37,17 @@ export default function Drawer() {
         }} >
             <Box sx={{
                 width: 'inherit',
-                // bgcolor: theme.palette.primary.main,
-                textAlign: 'center',
-                padding: 5,
                 display: 'flex',
                 justifyContent: 'center'
             }}>
                 <Box sx={{
-                    width: 150,
-                    height: 150,
-                    borderRadius: 50,
-                    bgcolor: theme.palette.background.default,
+                    width: 300,
+                    height: 300,
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center'
                 }}>
-                    <Box>
+                    <Box sx={{}}>
                         <Img src="https://www.facturae.com.co/app/img/2.jpg" />
                     </Box>
                 </Box>
@@ -69,27 +64,27 @@ export default function Drawer() {
             >
                 <ListItemButton>
                     <ListItemIcon>
-                        <SendIcon />
+                        <Person />
                     </ListItemIcon>
                     <ListItemText primary="Login" onClick={() => window.location.href = './login'}/>
                 </ListItemButton>
                 <ListItemButton>
                     <ListItemIcon>
-                        <SendIcon />
+                        < Timeline/>
                     </ListItemIcon>
-                    <ListItemText primary="dashboard" onClick={() => window.location.href = './dashboard'}/>
+                    <ListItemText primary="Dashboard" onClick={() => window.location.href = './dashboard'}/>
                 </ListItemButton>
                 <ListItemButton>
                     <ListItemIcon>
-                        <DraftsIcon />
+                        <FormatAlignJustifyIcon />
                     </ListItemIcon>
                     <ListItemText primary="Form" onClick={() => window.location.href = './form'}/>
                 </ListItemButton>
                 <ListItemButton onClick={handleClick}>
                     <ListItemIcon>
-                        <InboxIcon />
+                        <TableViewOutlinedIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Facturación" />
+                    <ListItemText primary="Tables" />
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Collapse in={open} timeout="auto" unmountOnExit>
@@ -98,12 +93,18 @@ export default function Drawer() {
                             <ListItemIcon>
                                 <StarBorder />
                             </ListItemIcon>
-                            <ListItemText primary="Recepción" onClick={() => window.location.href = '/recepcion'}/>
+                            <ListItemText primary="Crud" onClick={() => window.location.href = '/table'}/>
                         </ListItemButton>
                     </List>
                 </Collapse>
+                <ListItemButton>
+                    <ListItemIcon>
+                        <AddCardIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Cards" onClick={() => window.location.href = './cards'}/>
+                </ListItemButton>
             </List>
-            <Divider />
+            {/* <Divider /> */}
         </Box>
     );
 }

@@ -4,9 +4,9 @@ import DrawerNavList from './navDrawer';
 import { styled, useTheme } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import PersonIcon from '@mui/icons-material/Person';
-
+import '../../css-global.css';
 const LeftDrawer = styled(Paper)({
-    width: '250px', // Ancho fijo del Drawer
+    width: '300px', // Ancho fijo del Drawer
     height: '100%', // Ajusta la altura al 100% del viewport
     position: 'fixed', // Fija el Drawer a la izquierda
     top: 0,
@@ -18,7 +18,7 @@ const LeftDrawer = styled(Paper)({
 export default function NavBar() {
     return (
         <>
-            <LeftDrawer>
+            <LeftDrawer sx={{boxShadow: '0px 0px 8px #848484'}}>
                 <DrawerNavList />
             </LeftDrawer>
         </>
