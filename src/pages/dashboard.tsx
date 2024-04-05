@@ -24,9 +24,8 @@ function Dashboard() {
                 height: '100vh',
             }}
         >
-            {/* Contenedor interno para la barra de progreso */}
             {loading ? (
-                <Box sx={{ width: '50%', maxWidth: 400 }}> {/* Ancho máximo de 400px */}
+                <Box sx={{ width: '50%', maxWidth: 400 }}>
                     <LinearProgress />
                 </Box>
             ) : (

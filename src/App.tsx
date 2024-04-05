@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Form from './pages/form';
 import Login from './pages/login';
 import CardView from './pages/cards';
+import ResumenLibroVentasView from './pages/resumenLibroVentas';
 
 function App() {
   const FlexContainer = styled(Box)({
@@ -62,6 +63,7 @@ function App() {
           <Route path="/form" element={<Form />} index />
           <Route path="/table" element={<TableView />} index />
           <Route path="/cards" element={<CardView />} index />
+          <Route path="/resumen-libro-ventas" element={<ResumenLibroVentasView />} index />
         </Routes>
       </Router>
     </>
